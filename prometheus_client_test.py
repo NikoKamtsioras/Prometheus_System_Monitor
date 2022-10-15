@@ -34,7 +34,7 @@ def get_cpu():
 #Need to fix this mess
 def get_temp():
     temd = psutil.sensors_temperatures()
-    temls = str(teml)
+    temls = str(temd)
     temls1 = temls.replace("(",'')
     temls2 = temls1.replace(")",'')
     temls3 = temls2.replace("[shwtemplabel='', current=",'')
