@@ -30,7 +30,8 @@ def get_cpu():
     cpuu = psutil.cpu_percent(interval=1, percpu=True)
     cpul = sum(cpuu) / len(cpuu)
     CPU.set(cpul)
-
+    
+#Need to fix this mess
 def get_temp():
     temd = psutil.sensors_temperatures()
     teml = (temd['cpu_thermal'])
