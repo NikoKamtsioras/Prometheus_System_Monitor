@@ -3,6 +3,8 @@ import time as t
 import psutil
 import socket as so
 
+port = 7070
+
 RAM = prom.Gauge(so.gethostname() + "_memory_used_precent", '')
 CPU = prom.Gauge(so.gethostname() + "_cpu_used_precent", '')
 total_ram = prom.Gauge(so.gethostname() + "_total_ram", 'pc total ram')
@@ -52,5 +54,5 @@ def Main():
 
 
 if __name__ == '__main__':
-    prom.start_http_server(7070)
+    prom.start_http_server(port)
     Main()
