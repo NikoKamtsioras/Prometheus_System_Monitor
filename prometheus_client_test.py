@@ -31,7 +31,6 @@ def get_cpu():
     cpul = sum(cpuu) / len(cpuu)
     CPU.set(cpul)
 
-#Need to fix this mess
 def get_temp():
     temd = psutil.sensors_temperatures()
     temls = str(temd)
@@ -51,7 +50,7 @@ def Main():
         get_used_ram()
         get_cpu()
         get_temp()
-        
+
         #sleep for one second.
         t.sleep(1)
 
