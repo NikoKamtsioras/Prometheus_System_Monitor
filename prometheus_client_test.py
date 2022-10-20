@@ -45,6 +45,7 @@ def get_temp():
 def Main():
     
     while True:
+        #get system data
         get_ram()
         get_total_ram()
         get_used_ram()
