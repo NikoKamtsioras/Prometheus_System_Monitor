@@ -51,6 +51,7 @@ def Main():
         get_used_ram()
         get_cpu()
         get_temp()
+        
         #sleep for one second.
         t.sleep(1)
 
